@@ -1,0 +1,312 @@
+extends template/main
+
+
+block header
+	+header('transparent')
+
+block main
+	section.hero.hero--alt.section.dark.is-full-height
+		+bg('', '#100F0F')
+		.hero-bg.d-lg-block.d-none
+			video.hero-bg__video(preload='', playsinline='', loop='loop', autoplay='', muted='', poster='static/img/about-bg.jpg')
+				source(src='static/img/about-video.mp4', type='video/mp4')
+		.container
+			.row
+				.col-12.mb
+					h1
+						| О компании
+				.col-12
+					.col-inner(style='max-width: 38.75em')
+						p
+							| Компания «CITY press» уже длительное время находится на рынке полиграфических услуг, специализируясь на разработке и изготовлении картонной упаковки. Специалисты компании имеют большой опыт в выполнении заказов любой сложности. Сотрудничая с типографией полного цикла, вы обретете надежного партнера, которому можно полностью доверить проект.
+	section.section
+		.container
+			.row
+				.col-12
+					h2.outline-text
+						span.outline-text__item
+							| Объединяем
+						span
+							|  профессиональные знания
+						span.outline-text__item
+							| ,
+						span
+							|  накопленный опыт
+						span.outline-text__item
+							|  и
+						span
+							|  сильное производство
+						span.outline-text__item
+							|  в комплексный подход
+						span
+							|  для производства Вашего продукта.
+						a.brand-circle.brand-circle--play(href='https://youtu.be/v42bzI4aw0M', target='_blank')
+	section.section.our-values.dark
+		.bg
+		.container
+			.row
+				.col-12.mb--large
+					h2 Наши ценности
+			.row.mb-negative
+				.col-12.col-sm-6.col-lg-4.mb.our-values__item
+					.col-inner
+						h3(data-text='Надежность') Надежность
+						p
+							| Надежность партнерских отношений и упаковочных решений.
+				.col-12.col-sm-6.col-lg-4.mb.our-values__item
+					.col-inner
+						h3(data-text='Качество') Качество
+						p
+							| Высокое качество и функциональность выпускаемой продукции.
+				.col-12.col-sm-6.col-lg-4.mb.our-values__item
+					.col-inner
+						h3(data-text='Ответственность') Ответственность
+						p
+							| Ответственность за качество продукции на всех этапах производства
+				.col-12.col-sm-6.col-lg-4.mb.our-values__item
+					.col-inner
+						h3(data-text='Открытость') Открытость
+						p
+							| Готовность внедрять и применять новейшее оборудование и материалы
+				.col-12.col-sm-6.col-lg-4.mb.our-values__item
+					.col-inner
+						h3(data-text='Партнерство') Партнерство
+						p
+							| Ориентация на выстраивание долгосрочных отношений с партнерами и сотрудниками.
+
+	section.section.dark
+		+bg('', '#100F0F')
+		.container
+			.row
+				.col-12.mb--large
+					h2 В цифрах:
+				.col-12.mb--large
+					.col-inner(style='max-width: 38.75em')
+						p
+							| «CITY press» – один из лидеров печатного рынка Сибири, предлагающий индивидуальный подход к дизайну и изготовлению упаковки для вашего продукта. В типографии полного цикла работает команда профессионалов с большим опытом в печатном деле.
+			.row.flex-row.md-wrap.justify-content-between.mb-negative.pb
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 18
+						span Более восемнадцати лет опыта
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 130
+						span Сотрудников в штате
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 300
+						span Более трехсот партнеров
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 6000
+							small м2
+						span Производственных площадей
+	section.section.geography
+		.container
+			.row.align-items-center
+				.col-12.col-lg-8
+					.col-inner(style='max-width: 56.375em')
+						.geography-list--alt.mb.d-block.d-lg-none
+							ul
+								li
+									p
+										| Санкт-Петербург
+								li
+									p
+										| Москва
+								li
+									p
+										| Киров
+								li
+									p
+										| Челябинск
+								li
+									p
+										| Тюмень
+								li
+									p
+										| Омск
+								li
+									p
+										| Томск
+								li
+									p
+										| Кемерово
+								li
+									p
+										| Барнаул
+								li
+									p
+										| Бийск
+								li
+									p
+										| Усолье-Сибирское
+								li
+									p
+										| Ангарск
+								li
+									p
+										| Иркутск
+								li
+									p
+										| Чита
+								li
+									p
+										| Якутск
+								li
+									p
+										| Хабаровск
+								li
+									p
+										| Владивосток
+						.geography-map
+							.img
+								img(src='static/img/svg/map.svg', alt='map')
+							.geography-list
+								.geography-list__item.geography-list__item--spb
+									span Санкт-Петербург
+								.geography-list__item.geography-list__item--msk
+									span Москва
+								.geography-list__item.geography-list__item--kir
+									span Киров
+								.geography-list__item.geography-list__item--chel
+									span Челябинск
+								.geography-list__item.geography-list__item--tym
+									span Тюмень
+								.geography-list__item.geography-list__item--omsk
+									span Омск
+								.geography-list__item.geography-list__item--tmsk
+									span Томск
+								.geography-list__item.geography-list__item--kem
+									span Кемерово
+								.geography-list__item.geography-list__item--brn
+									span Барнаул
+								.geography-list__item.geography-list__item--biy
+									span Бийск
+								.geography-list__item.geography-list__item--uso
+									span Усолье-Сибирское
+								.geography-list__item.geography-list__item--ang
+									span Ангарск
+								.geography-list__item.geography-list__item--irk
+									span Иркутск
+								.geography-list__item.geography-list__item--chit
+									span Чита
+								.geography-list__item.geography-list__item--yak
+									span Якутск
+								.geography-list__item.geography-list__item--hab
+									span Хабаровск
+								.geography-list__item.geography-list__item--vlad
+									span Владивосток
+				.col-12.col-lg-4.order-first.order-lg-last.pb-0
+					.row
+						.col-12.mb--large
+							h2 География поставок
+						.col-12
+							p
+								| Сегодня с компанией «CITY press» сотрудничают более 300 крупных производителей фармацевтической, пищевой и парфюмерно-косметической промышленности в России. Приглашаем вас стать нашим партнером!
+	section.section.team
+		+bg('', '#100F0F')
+		.container
+			.row.dark
+				.col-12.mb--large
+					h2 Наша команда
+				.col-12.mb--large
+					.col-inner(style='max-width: 38.75em')
+						p
+							| Трудоустраивая новых работников, мы делаем всё возможное для обеспечения долговременного сотрудничества. Для персонала регулярно проводится обучение, так как будущее компании зависит от квалифицированных специалистов, которые качественно выполняют свою работу. Профессионалы своего дела многократно повышают стоимость предприятия. Прохождение обучения – один из элементов системы мотивации, побуждающей сотрудников реализовывать личные интересы через достижение целей компании.
+			.row.team-list
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/rodion.jpg', alt='rodion')
+					.team-card__info
+						p.team-card__title
+							| Сидоров Родион Дмитриевич
+						p
+							| Директор ООО «СИТИ-ПРЕСС»
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/sveta.jpg', alt='sveta')
+					.team-card__info
+						p.team-card__title
+							| Сидорова Светлана Анатольевна
+						p
+							| Коммерческий директор
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/vlad.jpg', alt='vlad')
+					.team-card__info
+						p.team-card__title
+							| Гинзбург Владислав Олегович
+						p
+							| Директор направления по изготовлению бумажных стаканов
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/oksana.jpg', alt='oksana')
+					.team-card__info
+						p.team-card__title
+							| Епифанова Оксана Маматовна
+						p
+							| Заместитель директора по производству
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/inna.jpg', alt='inna')
+					.team-card__info
+						p.team-card__title
+							| Резникова Инна Григорьевна
+						p
+							| Начальник коммерческого отдела
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/natalia.jpg', alt='natalia')
+					.team-card__info
+						p.team-card__title
+							| Лесечко Наталья Григорьевна
+						p
+							| Главный бухгалтер
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/aleksandr.jpg', alt='aleksandr')
+					.team-card__info
+						p.team-card__title
+							| Бориско Александр Николаевич
+						p
+							| Начальник отдела дизайна и допечатной подготовки
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/vitalyi.jpg', alt='vitalyi')
+					.team-card__info
+						p.team-card__title
+							| Малетин Виталий Викторович
+						p
+							| Начальник участка печати
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/mihail.jpg', alt='mihail')
+					.team-card__info
+						p.team-card__title
+							| Лысенко Михаил Владимирович
+						p
+							| Начальник Участка постпечатной обработки
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/ramilya.jpg', alt='ramilya')
+					.team-card__info
+						p.team-card__title
+							| Ибрагимова Рамиля Махомадовна
+						p
+							| Начальник Отдела технического контроля
+				.col-12.col-sm-6.col-lg-3.team-card
+					.team-card__img.image-cover
+						img(src='static/img/dima.jpg', alt='dima')
+					.team-card__info
+						p.team-card__title
+							| Сидоров Дмитрий Родионович
+						p
+							| Начальник цеха
+
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

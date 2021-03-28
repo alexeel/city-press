@@ -1,0 +1,68 @@
+.button{
+	display: inline-block;
+	appearance: none;
+	cursor: pointer;
+	text-align: center;
+	min-width: 12.4em;
+	max-width: 100%;
+	padding: .9em .3em;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 1.125em;
+	font-weight: 700;
+	line-height: 1.2;
+	border-width: 1px;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	transition: .4s ease-in-out;
+	&:last-child{
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	&.primary{
+		border-style: solid;
+		border-color: $primary-color;
+		background-color: $primary-color;
+		color: $light;
+		&:hover{
+			background-color: $light;
+			border-color: $dark;
+			color: $dark;
+		}
+		&.disabled{
+			opacity: .5;
+			&:hover{
+				border-color: $primary-color;
+				background-color: $primary-color;
+				color: $light;
+			}
+		}
+	}
+	&.is-outline{
+		background: linear-gradient(90deg, currentColor 50%, transparent 50%),
+		linear-gradient(90deg, transparent 50%, currentColor 50%),
+		linear-gradient(0deg, transparent 50%, currentColor 50%),
+		linear-gradient(0deg, currentColor 50%, transparent 50%);
+		background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+		background-size: .5em 1px, .5em 1px, 1px .5em, 1px .5em;
+		background-position: 0% 0%, 0% 100%, 0% 0%, 100% 0%;
+		animation: border-dance 4s infinite linear;
+		transition: .7s;
+		&:hover{
+			color: currentColor;
+			animation-play-state: paused;
+			background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+		}
+	}
+	&.is-link{
+		padding: 0;
+		border: 0;
+		min-width: auto;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+	&.is-expand{
+		min-width: auto;
+		width: 100%;
+	}
+}

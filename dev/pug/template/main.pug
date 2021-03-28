@@ -1,0 +1,17 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='ru')
+	head
+		include partials/head
+	body(class= light)
+		block header
+
+		main
+			block main
+
+		block footer
+
+		include partials/scripts
+		include partials/photoswipe

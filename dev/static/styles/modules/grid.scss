@@ -1,0 +1,33 @@
+.container{
+	position: relative;
+	max-width: $content-size;
+	z-index: 99;
+}
+.flex-row{
+	flex-flow: row nowrap;
+}
+.flex-col{
+	width: auto;
+	flex: initial;
+	padding-bottom: 0;
+	&.flex-grow{
+		flex: 1;
+	}
+}
+.col{
+	&-inner{
+		width: 100%;
+	}
+	&--right{
+		&>.col-inner{
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+	&--center{
+		&>.col-inner{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

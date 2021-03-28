@@ -1,0 +1,78 @@
+/*------------------- default stylesheets start -------------------*/
+
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/animations';
+@import 'utils/default';
+@import 'modules/bg';
+@import 'modules/grid';
+@import 'modules/button';
+@import 'modules/form';
+@import 'modules/table';
+@import 'modules/img';
+@import 'modules/image-cover';
+@import 'modules/lightbox';
+@import 'modules/slider';
+
+/*------------------- default stylesheets end -------------------*/
+/*------------------- header stylesheets start -------------------*/
+
+@import 'modules/header';
+@import 'modules/navbar';
+
+/*------------------- header stylesheets end -------------------*/
+/*------------------- main stylesheets start -------------------*/
+
+@import 'modules/hero';
+@import 'modules/outline-text';
+@import 'modules/brand-circle';
+@import 'modules/image-bordered';
+@import 'modules/kolbasa';
+@import 'modules/brand-line';
+@import 'modules/equipment-park';
+@import 'modules/stages-slider';
+@import 'modules/stages-card';
+@import 'modules/big-num';
+@import 'modules/form-section';
+@import 'modules/map';
+@import 'modules/row-divided';
+
+
+/*------------------- main stylesheets end -------------------*/
+/*------------------- about stylesheets start -------------------*/
+
+@import 'modules/play-button';
+@import 'modules/our-values';
+@import 'modules/geography';
+@import 'modules/team';
+
+
+/*------------------- about stylesheets end -------------------*/
+/*------------------- clients stylesheets start -------------------*/
+
+@import 'modules/stages-line';
+@import 'modules/dictionary';
+
+
+/*------------------- clients stylesheets end -------------------*/
+/*------------------- news stylesheets start -------------------*/
+
+@import 'modules/post-item';
+@import 'modules/page-nav';
+@import 'pages/post';
+
+
+/*------------------- news stylesheets end -------------------*/
+/*------------------- footer stylesheets start -------------------*/
+
+@import 'modules/footer';
+@import 'modules/menu';
+@import 'modules/popup';
+
+/*------------------- footer stylesheets end -------------------*/
+/*------------------- media stylesheets start -------------------*/
+
+@import 'modules/media';
+
+/*------------------- media stylesheets end -------------------*/

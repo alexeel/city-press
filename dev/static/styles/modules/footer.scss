@@ -1,0 +1,56 @@
+.footer{
+	position: relative;
+	background-color: $dark;
+	padding: 80px 0 50px;
+	font-size: .875em;
+	&-copy{
+		a{
+			display: block;
+		}
+		&>.col-inner{
+			padding-bottom: 2em;
+		}
+	}
+	&-menu{
+		list-style: none;
+		&__item{
+			margin-bottom: 1.3em;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&__link{
+			display: block;
+		}
+	}
+	&-submenu{
+		display: flex;
+		justify-content: space-between;
+		&__item{
+			max-width: 10em;
+			padding-right: .7em;
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+	&-author{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		&__link{
+			pointer-events: all;
+			span{
+				vertical-align: middle;
+			}
+		}
+		&__name{
+			font-weight: 400;
+			span{
+				margin-right: .3em;
+				text-decoration: underline;
+			}
+		}
+	}
+}

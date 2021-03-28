@@ -1,0 +1,40 @@
+.brand-circle{
+	position: relative;
+	display: inline-block;
+	padding-right: 2.16em;
+	&::before{
+		content: '';
+		position: absolute;
+		bottom: -.6em;
+		right: 0;
+		display: block;
+		width: 1.66em;
+		height: 1.66em;
+		background: url('../img/svg/brand-circle.svg') no-repeat center center /contain;
+		animation: rotate 10s infinite linear;
+	}
+	&--play{
+		padding-right: 2.5em;
+		transition: transform .4s;
+		&::before{
+			bottom: auto;
+			top: -.8em;
+			width: 2em;
+			height: 2em;
+			background: url('../img/svg/play-button.svg') no-repeat center center /contain;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			top: -.8em;
+			right: 0;
+			width: 2em;
+			height: 2em;
+			display: block;
+			background: url('../img/svg/play-icon.svg') no-repeat center center /contain;
+		}
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+img{
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+iframe,
+svg{
+	max-width: 100%;
+}
+.img{
+	width: 100%;
+	max-width: 100%;
+	&>img{
+		width: 100%;
+	}
+}

@@ -1,0 +1,24 @@
+.page-nav{
+	font-size: 1.25em;
+	font-weight: 400;
+	text-align: right;
+	&__btn{
+		&--prev{
+			padding-right: .2em;
+		}
+		&--next{
+			padding-left: .2em;
+		}
+		&.disabled{
+			display: none;
+		}
+	}
+	&__number{
+		padding: 0 .2em;
+		&.current{
+			font-weight: 700;
+			font-size: 1.2em;
+			color: $primary-color;
+		}
+	}
+}

@@ -1,0 +1,267 @@
+extends template/main
+block variables
+	- var light = 'light';
+
+block header
+	+header()
+
+block main
+	section.section.mb
+		.container
+			.row
+				.col-12.mb
+					h1 Парк оборудования
+				.col-12.mb--large
+					.col-inner(style='max-width: 38.75em')
+						p
+							| Мы используем полиграфическое оборудование от известных производителей и регулярно отслеживаем появление новой печатной техники. Современное допечатное, печатное и послепечатное оборудование обеспечивает высокую производительностью и функциональность, которые ценятся нашими клиентами.
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3
+							| Печатная машина
+							br
+							| KBA Rapida 105-5
+				.col-12.col-md-6.col-lg-5.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/rapida-1.jpg', alt='rapida-1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/rapida-2.jpg', alt='rapida-2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/rapida-3.jpg', alt='rapida-3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/rapida-4.jpg', alt='rapida-4')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/rapida-5.jpg', alt='rapida-5')
+							.slider-nav
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #EDA915;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/vatan-1.jpg', alt='vatan-1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/vatan-2.jpg', alt='vatan-2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/vatan-3.jpg', alt='vatan-3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/vatan-4.jpg', alt='vatan-4')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/vatan-5.jpg', alt='vatan-5')
+							.slider-nav
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__info
+					.col-inner
+						h3
+							| Листорезальная машина
+							br
+							| Vatan Makina 1360
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3
+							| Трафаретные
+							br
+							| машины JINBAO 1050
+				.col-12.col-md-6.col-lg-5.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #2D2DFE;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/jinbao1.jpg', alt='jinbao1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/jinbao2.jpg', alt='jinbao2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/jinbao3.jpg', alt='jinbao3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/jinbao5.jpg', alt='jinbao5')
+							.slider-nav
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #C42125;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/speedliner1.jpg', alt='speedliner1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/speedliner2.jpg', alt='speedliner2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/speedliner3.jpg', alt='speedliner3')
+							.slider-nav
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__info
+					.col-inner
+						h3
+							| Окошковклейвающая
+							br
+							| машина WP Speedliner
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3
+							| Фальцевально-склеивающие линии Diana 85
+				.col-12.col-md-6.col-lg-5.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #06A77D;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/diana1.jpg', alt='diana1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/diana2.jpg', alt='diana2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/diana3.jpg', alt='diana3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/diana4.jpg', alt='diana4')
+							.slider-nav
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/nikko1.jpg', alt='nikko1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/nikko2.jpg', alt='nikko2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/nikko3.jpg', alt='nikko3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/nikko4.jpg', alt='nikko4')
+							.slider-nav
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__info
+					.col-inner
+						h3
+							| Штанцевальная
+							br
+							| машина Nikko 1050
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3
+							| Штанцевальная
+							br
+							| машина Easymatrix 106CS
+				.col-12.col-md-6.col-lg-5.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #EDA915;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrix1.jpg', alt='easymatrix1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrix2.jpg', alt='easymatrix2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrix3.jpg', alt='easymatrix3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrix4.jpg', alt='easymatrix4')
+							.slider-nav
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #2D2DFE;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrixFC1.jpg', alt='easymatrixFC1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrixFC2.jpg', alt='easymatrixFC2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrixFC3.jpg', alt='easymatrixFC3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/easymatrixFC4.jpg', alt='easymatrixFC4')
+							.slider-nav
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__info
+					.col-inner
+						h3
+							| Тиснильная машина
+							br
+							| Easymatrix 106FC
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3
+							| Система Computer-to-Plate формата B1+ для изготовления металлических форм с термальным чувствительным слоем CtP Fujifilm Luxel T-9500SL
+				.col-12.col-md-6.col-lg-5.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #C42125;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/ctp1.jpg', alt='ctp1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/ctp2.jpg', alt='ctp2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/ctp3.jpg', alt='ctp3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/ctp4.jpg', alt='ctp4')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/ctp5.jpg', alt='ctp5')
+							.slider-nav
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.simple-slider__wrap
+							.simple-slider.image-bordered(style='color: #06A77D;')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/papglass1.jpg', alt='papglass1')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/papglass2.jpg', alt='papglass2')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/papglass3.jpg', alt='papglass3')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/papglass4.jpg', alt='papglass4')
+								.simple-slider__item
+									.image-cover
+										img(src='static/img/papglass5.jpg', alt='papglass5')
+							.slider-nav
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__info
+					.col-inner
+						h3
+							| Оборудование для
+							br
+							| производства бумажных стаканов
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

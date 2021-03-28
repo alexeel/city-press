@@ -1,0 +1,42 @@
+.header{
+	padding: 1.875em 0;
+	background-color: $light;
+	&-inner{
+		padding-left: 1.875em;
+		padding-right: 1.875em;
+	}
+	&.transparent{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: none;
+		border: 0;
+		z-index: 99;
+		.header-logo{
+			&-light{
+				display: block;
+			}
+			&-dark{
+				display: none;
+			}
+		}
+	}
+	&-logo{
+		flex: auto;
+		max-width: 9.375em;
+		&-light{
+			display: none;
+		}
+		img{
+			width: 100%;
+		}
+		.logo__link{
+			display: block;
+		}
+	}
+	&-contact{
+		font-family: 'Oswald', 'Arial', sans-serif;
+		font-weight: 700;
+	}
+}

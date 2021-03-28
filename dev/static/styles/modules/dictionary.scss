@@ -1,0 +1,42 @@
+.dictionary{
+	&-nav{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		&__item{
+			opacity: .5;
+			border: 1px dashed;
+			transition: opacity .4s;
+			&:not(:first-child){
+				margin-left: -1px;
+			}
+			&.active{
+				opacity: 1;
+				background-color: $primary-color;
+				color: $light;
+				a{
+					color: inherit;
+				}
+			}
+			&:hover{
+				opacity: 1;
+			}
+		}
+		&__link{
+			padding: .3em;
+		}
+	}
+	&-content{
+		max-width: 71.25em;
+		&__item{
+			margin-bottom: 2.5em;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			dt{
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

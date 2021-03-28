@@ -1,0 +1,38 @@
+.hero{
+	&-bg{
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		width: 89.5%;
+		height: 84%;
+		z-index: 0;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(16, 15, 15, 0.55);
+			z-index: 9;
+		}
+		&__video{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 50%;
+		}
+	}
+	&--alt{
+		.hero-bg{
+			top: auto;
+			bottom: 0;
+			width: 89.4%;
+			height: 89.4%;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	padding: 1.25em 6.25em;
+	max-width: 26.875em;
+	background-color: #0DA884;
+	background-image: linear-gradient(180deg, #0DA884 0%, #5FB3CA 100%);
+	transform: translateX(100%);
+	transition: transform .5s;
+	transition-delay: 0s;
+	&::-webkit{
+		&-scrollbar{
+			cursor: pointer;
+			width: .625em;
+		}
+		&-scrollbar-track{
+			background-color: $light;
+		}
+		&-scrollbar-thumb{
+			background-color: $dark;
+		}
+	}
+	&-wrap{
+		position: fixed;
+		display: none;
+		left: 0;
+		top: 0;
+		width: 93vw;
+		height: 100vh;
+		overflow: hidden;
+		background: rgba(16, 15, 15,.6);
+		z-index: 999;
+		&.active{
+			.menu{
+				transition-delay: .3s;
+				transform: translateX(0);
+			}
+		}
+	}
+	&__item{
+		margin-bottom: 5em;
+		.button.is-outline{
+			animation-play-state: paused;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&-btn{
+		position: relative;
+		width: 3.125em;
+		height: 3.125em;
+		border: 1px solid;
+		border-radius: 50%;
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 44%;
+			transform: translate(-50%, -50%);
+			display: block;
+			transition: .4s;
+		}
+		&::before{
+			height: .75em;
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+		}
+		&::after{
+			height: 1px;
+			background-color: currentColor;
+		}
+		&:hover{
+			&::before{
+				width: 66%;
+			}
+			&::after{
+				width: 27%;
+			}
+		}
+		&--close{
+			position: absolute;
+			top: 1.875em;
+			right: 2.5em;
+			width: 3.125em;
+			height: 3.125em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid;
+			border-radius: 50%;
+			i{
+				display: block;
+				transition: .7s;
+			}
+			&:hover{
+				i{
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}

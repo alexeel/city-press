@@ -1,0 +1,119 @@
+.geography{
+	&-map{
+		position: relative;
+	}
+	&-list{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		&--alt{
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				li{
+					margin-right: 1em;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		&__item{
+			cursor: pointer;
+			position: absolute;
+			width: 1.6em;
+			height: 1.6em;
+			background-image: url('../img/svg/pin-alt.svg');
+			background-position: left .3em;
+			background-repeat: no-repeat;
+			&>span{
+				position: absolute;
+				top: 0;
+				left: 100%;
+				overflow: hidden;
+				width: 0;
+				display: inline-block;
+				background-color: $light;
+				white-space: nowrap;
+				transition: .4s;
+			}
+			&:hover{
+				z-index: 99;
+				&>span{
+					padding: .2em .7em;
+					width: auto;
+				}
+			}
+			&--spb{
+				top: 13.6%;
+				left: 15%;
+			}
+			&--msk{
+				top: 27%;
+				left: 13%;
+			}
+			&--kir{
+				top: 36%;
+				left: 21%;
+			}
+			&--chel{
+				top: 53%;
+				left: 24.6%;
+			}
+			&--tym{
+				top: 52%;
+				left: 29.5%;
+			}
+			&--omsk{
+				top: 60%;
+				left: 33%;
+			}
+			&--tmsk{
+				top: 64.3%;
+				left: 41.3%;
+			}
+			&--kem{
+				top: 69%;
+				left: 42.6%;
+			}
+			&--brn{
+				top: 72.4%;
+				left: 39.6%;
+			}
+			&--biy{
+				top: 75.6%;
+				left: 39%;
+			}
+			&--uso{
+				top: 72.5%;
+				left: 55%;
+			}
+			&--ang{
+				top: 75.3%;
+				left: 56%;
+			}
+			&--irk{
+				top: 77.3%;
+				left: 57.2%;
+			}
+			&--chit{
+				top: 78.5%;
+				left: 65.6%;
+			}
+			&--yak{
+				top: 51.5%;
+				left: 74%;
+			}
+			&--hab{
+				top: 77.5%;
+				left: 84.9%;
+			}
+			&--vlad{
+				top: 92%;
+				left: 84.3%;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+extends template/main
+
+
+
+block header
+	+header('transparent')
+
+block main
+	section.map.section.dark.is-full-height
+		+bg('', '#100F0F')
+		.container.map__info
+			.row
+				.col-12.mb--large
+					.col-inner(style='max-width: 24.375em')
+						h1 Контакты
+				.col-12
+					.col-inner(style='max-width: 24.375em')
+						h6 Адрес:
+						p
+							| г.Новосибирск,
+							br
+							| ул.Сухарная, д. 35 корпус 11/1, 4 этаж
+				.col-12.mb--large
+					.col-inner(style='max-width: 24.375em')
+						h6 Контакты:
+						p
+							a(href='tel:+7(383)399-00-03') +7(383)399-00-03
+						p
+							a(href='mailto:office@city-press.ru') office@city-press.ru
+				.col-12
+					.col-inner(style='max-width: 24.375em')
+						.lightbox-wrap.is-link(itemscope="" itemtype="http://schema.org/ImageGallery")
+							figure(itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject")
+								a(href="static/img/map-scheme.jpg" itemprop="contentUrl" data-size="582x718")
+									img(src="static/img/map-scheme.jpg" itemprop="thumbnail" alt="Image description")
+								figcaption.button.primary(itemprop="caption description") Схема проезда
+		.map__wrap
+			#map
+
+
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

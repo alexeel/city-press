@@ -1,0 +1,16 @@
+.form-section{
+	&__img{
+		position: absolute;
+		top: 94%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 9;
+	}
+	.container-fluid{
+		position: relative;
+		&:first-child{
+			padding-top: 5em;
+			overflow: visible;
+		}
+	}
+}

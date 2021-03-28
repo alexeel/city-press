@@ -1,0 +1,21 @@
+.equipment-park{
+	&__nums,
+	&__info{
+		display: flex;
+		align-items: center;
+	}
+	&__nums{
+		&>.col-inner{
+			margin-left: 15px;
+			padding-left: calc((100vw - 7vw - #{$content-size})/2);
+			padding-right: 6%;
+		}
+	}
+	&__info{
+		&>.col-inner{
+			margin-right: 15px;
+			padding-right: calc((100vw - 7vw - #{$content-size})/2);
+			padding-left: 6%;
+		}
+	}
+}

@@ -1,0 +1,280 @@
+extends template/main
+block variables
+	- var light = 'light';
+
+block header
+	+header()
+
+block main
+	section.section.pb-0
+		.container
+			.row
+				.col-12.mb
+					h1 Клиентам
+				.col-12
+					.col-inner(style='max-width: 38.75em')
+						p
+							| Мы разрабатываем и производим упаковку из картона, воплощая в реальность творческие идеи заказчика или предлагая собственные. Сотрудничая с нами, вы гарантированно получите качественную упаковку, которая обеспечит сохранность продукта при хранении и транспортировке, а также проинформирует ваших покупателей о преимуществах товара.
+	section.section.stages-line.pb-0
+		.container
+			.row
+				.col-12.mb--large
+					h2 Этапы работы с нами
+		.container-fluid
+			.row.no-gutters.stages-line__wrap
+				.col-12
+					ul.stages-line__list
+						li.stages-line__item
+							span.stages-line__number
+								| 01
+							.stages-line__content
+								h4.stages-line__title
+									| Формируем
+									br
+									| техническое задание
+								p
+									| Мы получаем ваш бриф, где подробно изложены цель и идея будущего проекта. В правильно составленном ТЗ перечисляются все требования по техническим параметрам, необходимым материалам, особенностям декора и отделки. Все работы будут выполняться и приниматься в соответствии с положениями технического задания.
+						li.stages-line__item
+							span.stages-line__number
+								| 02
+							.stages-line__content
+								h4.stages-line__title
+									| Согласуем
+									br
+									| материалы
+								p
+									| Мы проводим обсуждение, во время которого подбираем материалы, оптимально подходящие для выполнения вашей задачи. Картон, бумага, пластиковые окошки, элементы декора и другие материалы, необходимые для создания качественной картонной тары, будут подробно обсуждаться. Так мы подберем составляющие, которые позволят создать красивую, прочную, практичную и визуально привлекательную упаковку.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 03
+							.stages-line__content
+								h4.stages-line__title
+									| Разработаем и согласуем
+									br
+									| чертеж (макет)
+								p
+									| Конструктор нашей типографии разработает макет в точном соответствии с вашими пожеланиями и вырежет модель для примера, с соблюдением указанных параметров. Мы можем предложить несколько вариантов на выбор. Если у вас возникнут пожелания по корректировке формы и размеров – мы примем их в разработку.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 04
+							.stages-line__content
+								h4.stages-line__title
+									| Заключим договор
+									br
+									| и согласуем спецификации
+								p
+									| Чтобы обезопасить обе стороны на юридическом уровне, мы подкрепим обязательства документально. Наши юристы предоставят типовую форму договора и особого документа для типографии – спецификации.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 05
+							.stages-line__content
+								h4.stages-line__title
+									| Работаем над дизайном
+									br
+									| и тестируем адаптацию
+								p
+									| Если у вас уже есть готовый дизайн, то мы можем предложить решения, которые сделают его более качественным. Также наши дизайнеры могут создать его с нуля. Перед передачей чертежа мы составим указания, касающиеся процесса наложения краски, особенностей типографики, конгрева и т.д. Мы протестируем, как проходит адаптация упаковки к возможностям технического оснащения нашей типографии и производства заказчика.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 06
+							.stages-line__content
+								h4.stages-line__title
+									| Проверим передачу цвета
+									br
+									| и адаптацию к материалам
+								p
+									| Поскольку точность воспроизведения цвета зависит от большого количества естественных и технологических факторов, важно провести проверку. Когда согласован макет, выполненный в CMYK, делается цветопроба, чтобы выяснить, как макет сочетается с выбранными материалами. Если применялась система Pantone, то будет проведена выкраска.
+						li.stages-line__item
+							span.stages-line__number
+								| 07
+							.stages-line__content
+								h4.stages-line__title
+									| Согласуем
+									br
+									| тестовый образец
+								p
+									| Если дальнейшее изготовление планируется на автоматических линиях заказчика, мы выпускаем тестовую партию картонных коробок. После их одобрения можно начинать промышленный выпуск тиража. При отказе от тестирования мы проводим согласование плоттерного образца сразу из тиражного материала.
+						li.stages-line__item
+							span.stages-line__number
+								| 08
+							.stages-line__content
+								h4.stages-line__title
+									| Закажем
+									br
+									| необходимые материалы
+								p
+									| Мы подбираем способ раскладки упаковок на картонном листе и определяем, какой формат оптимально подойдет. Далее направляем заказ в отдел закупок. На складе есть обширные запасы материалов, но если у вас спецформат, для которого требуются нестандартные расходники, мы обратимся к поставщику. Такой вариант может потребовать дополнительного времени.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 09
+							.stages-line__content
+								h4.stages-line__title
+									| Изготовим индивидуальный
+									br
+									| штамп и клише
+								p
+									| После согласования всех документов мы заказываем специальный штамп для вырубки коробки по заданным параметрам, а также типографский шаблон (клише) для серийной печати оттисков текста и иллюстраций. Изготовление данной постпечатной оснастки потребует определенного времени: срок зависит от сложности этих изделий.
+						li.stages-line__item.stages-line__item--left
+							span.stages-line__number
+								| 10
+							.stages-line__content
+								h4.stages-line__title
+									| Запускаем макет
+									br
+									| в промышленное производство
+								p
+									| Когда штамп и печатная форма получены, документы и спецификация согласованы, то можно отправлять заказ в печать. Мы занимаемся промышленным изготовлением картонной упаковки, и если вы хотите сделать заказ или узнать подробности – свяжитесь с нами по телефону или электронной почте.
+				.col-12.d-none.d-lg-block
+					.img
+						img(src='static/img/svg/conveyor.svg', alt='conveyor')
+	section.section.stages-line
+		.container
+			.row
+				.col-12.mb--large
+					h2 Словарь терминов
+				.col-12.mb
+					ul.dictionary-nav.h3.mb--large
+						li.dictionary-nav__item.active
+							a.dictionary-nav__link(href='javascript:void(0)') А
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Б
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') В
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Г
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Д
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Е
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ж
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') З
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') И
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') К
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Л
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') М
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Н
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') О
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') П
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Р
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') С
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Т
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') У
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ф
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Х
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ц
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ч
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ш
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Щ
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Э
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Ю
+						li.dictionary-nav__item
+							a.dictionary-nav__link(href='javascript:void(0)') Я
+					dl.dictionary-content
+						.dictionary-content__item
+							dt.headline-font.h6 А
+							dd
+								p
+									| Описатель размера формата стандартных листов бумаги основного ряда — А. В ряду А, напр., 13 классов, обозначающих размер формата бумаги. Каждый отдельный формат обозначается буквой ряда и цифрой класса (А1, А2, А3, А4, А5 и т.д.), а размер его определяется в миллиметрах.
+								p
+									| Наиболее употребительные форматы А2 (420х594 мм), А3 (297х420 мм), А4 (210х297 мм), А5 (148х210 мм). Формат А13 равен примерно размеру почтовой марки.
+						.dictionary-content__item
+							dt.headline-font.h6 Абзац
+							dd
+								p
+									| (от нем. Absatz - абзац, красная строка)
+								p
+									| 1. красная строка — отступ в начальной строке текста (в издательской практике встречается оформление, когда абзац начинается от края набора без отступа);
+								p
+									| 2. часть текста от одного такого отступа до следующего.
+						.dictionary-content__item
+							dt.headline-font.h6 АБЗАЦНЫЙ ОТСТУП
+							dd
+								p
+									| Пробел слева в начальной строке абзаца. По правилам набора должен быть одинаковым для текста всего издания независимо от размера (кегля) шрифта. Отсутствует в т.н. безабзацном наборе, где абзацный отступ обозначается только концевым пробелом.
+								p
+									| При решении вопроса о размере абзацного отступа для издания определенного типа исходят из требований удобочитаемости текста в зависимости от кегля шрифта, формата полосы набора и размера междустрочных пробелов.
+						.dictionary-content__item
+							dt.headline-font.h6 АВТОРСКИЙ ЛИСТ
+							dd
+								p
+									| Единица измерения объема произведения, принятая для учета труда авторов, переводчиков, редакторов и других специалистов.
+								p
+									| В России авторский лист равен 40 тыс. печатных знаков (включая пробелы), или 700 строкам стихотворного материала, или 3 тыс. кв.см иллюстративного материала.
+						.dictionary-content__item
+							dt.headline-font.h6 АККЛИМАТИЗАЦИЯ БУМАГИ (КАРТОНА)
+							dd
+								p
+									| Процесс приведения влажности бумаги в равновесное состояние с влажностью воздуха в печатном цехе. В целях обеспечения постоянной влажности бумаги в цехах поддерживается постоянная влажность воздуха 45-55% зимой и 50-60% летом и температура воздуха 18-22°С зимой, 19-23°С летом.
+								p
+									| Простейший способ акклиматизации — выдерживание распакованной бумаги на стеллажах непосредственно в печатном цехе сроком не менее суток.
+						.dictionary-content__item
+							dt.headline-font.h6 АКЦИДЕНТНЫЕ ШРИФТЫ
+							dd
+								p
+									| Шрифты, предназначающиеся для акциденции, использования в заголовках и т.д.
+								p
+									| Примеры таких шрифтов: Univers, Benguia, Kabel, Magistral.
+						.dictionary-content__item
+							dt.headline-font.h6 АКЦИДЕНЦИЯ
+							dd
+								p
+									| (от лат. accidentia — случайность)
+								p
+									| 1. Заказ на небольшую печатную работу.
+								p
+									| 2. Листовая печатная продукция небольшого тиража, например, бланки, объявления, афиши, грамоты и пр., для оформления которой используются различные декоративные шрифты, орнаменты, линейки и т.д.
+						.dictionary-content__item
+							dt.headline-font.h6 АМБАЛАЖ
+							dd
+								p
+									| (от фр. emballage — упаковка)
+								p
+									| Плотная бумага, в которую упаковывают рулоны типографской бумаги.
+						.dictionary-content__item
+							dt.headline-font.h6 АНАЛОГОВАЯ ЦВЕТОПРОБА
+							dd
+								p
+									| Цветопроба, изготовленная с цветоделенных фотоформ (как правило, для офсетной печати).
+								p
+									| В настоящее время термин «аналоговая цветопроба» используется главным образом для обозначения фотоцветопробы.
+								p
+									| См. также Хромалин).
+						.dictionary-content__item
+							dt.headline-font.h6 АНТИКВА
+							dd
+								p
+									| (от лат. antiquus — древний)
+								p
+									| Шрифт латинской алфавитной системы, ведущий начало от книжного письма эпохи Возрождения. Округлый гармоничный изящный шрифт с засечками.
+								p
+									| Противопоставлялась готическому письму, ошибочно принималась за подлинный шрифт античной эпохи.
+								p
+									| Примеры шрифтов, созданных на основе канонов антиквы: Garamond, Bookman, Mysl, Palatino, Lazurski.
+				.col-12
+					include modules/page-nav
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

@@ -1,0 +1,21 @@
+.image-bordered{
+	position: relative;
+	padding: 1.7%;
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		display: block;
+		height: 100%;
+		width: 13%;
+		background-color: currentColor;
+		z-index: -1;
+	}
+	&::before{
+		left: 0;
+	}
+	&::after{
+		right: 0;
+	}
+}

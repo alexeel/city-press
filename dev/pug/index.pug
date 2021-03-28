@@ -1,0 +1,356 @@
+extends template/main
+
+
+block header
+	+header('transparent')
+
+block main
+	section.hero.section.dark.is-full-height
+		+bg('', '#100F0F')
+		.hero-bg.d-lg-block.d-none
+			video.hero-bg__video(preload='', playsinline='', loop='loop', autoplay='', muted='', poster='static/img/hero-video-poster.jpg')
+				source(src='static/img/hero-video.mp4', type='video/mp4')
+		.container
+			.row
+				.col-12
+					h1(style='max-width: 9.42em')
+						| Типография полного цикла
+					button.button.primary.button--popup(data-popup='calc')
+						| Заказать расчет
+					a.button.is-outline(href='https://youtu.be/v42bzI4aw0M', target='_blank')
+						| Смотреть видео
+	section.section
+		.container
+			.row
+				.col-12
+					h2.outline-text
+						span.outline-text__item
+							| Мы предлагаем
+						span
+							|  индивидуальную разработку и
+						span.outline-text__item
+							|  изготовление
+						span
+							|  современной картонной упаковки в крупнейшей типографии
+						br
+						span.outline-text__item.brand-circle
+							|  за Уралом.
+	.kolbasa-block
+		.kolbasa
+			.kolbasa-part
+				section.section.dark.is-full-height
+					+bg('', '#100F0F')
+					.container
+						.row.align-items-center
+							.col-12.col-lg-7
+								img(src='static/img/services-all.png', alt='services-all')
+							.col-12.col-lg-5.pb-0
+								.row
+									.col-12.mb--large
+										h2 Наши услуги
+									.col-12.mb
+										.col-inner(style='max-width: 30.625em')
+											h3 Допечатная подготовка
+											ul
+												li
+													p Подготовка макета к печати в соответствии с требованиями типографии;
+												li
+													p Цветокоррекция изображения;
+												li
+													p
+														| Разработка и проектирование оснастки для отделок фольгой, конгревного тиснения и лакирования;
+												li
+													p Проектирование кроев коробок.
+									.col-12
+										a.button.is-outline(href='services.html')
+											| Все услуги
+			.kolbasa-part
+				section.section.is-full-height
+					+bg('', '#EDA915')
+					.container
+						.row.align-items-center
+							.col-12.col-lg-7
+								img(src='static/img/service-1.png', alt='service-1')
+							.col-12.col-lg-5
+								.row
+									.col-12.mb--large
+										span.h2.d-none.d-lg-block Наши услуги
+									.col-12.mb
+										.col-inner(style='max-width: 30.625em')
+											h3 Печать
+											ul
+												li
+													p Многокрасочная печать с различными видами покрытий;
+												li
+													p Лакирование водными и УФ-лаками;
+												li
+													p Твин-лакирование;
+												li
+													p Лакирование пигментными лаками.
+									.col-12
+										a.button.is-outline(href='services.html')
+											| Все услуги
+			.kolbasa-part
+				section.section.dark.is-full-height
+					+bg('', '#2D2DFE')
+					.container
+						.row.align-items-center
+							.col-12.col-lg-7.text-center
+								img(src='static/img/service-2.png', alt='service-2')
+							.col-12.col-lg-5
+								.row
+									.col-12.mb--large
+										span.h2.d-none.d-lg-block Наши услуги
+									.col-12.mb
+										.col-inner(style='max-width: 30.625em')
+											h3 Постпечать
+											ul
+												li
+													p Тиснение фольгой;
+												li
+													p УФ-лакирование;
+												li
+													p Ламинирование;
+												li
+													p Вклейка окошек ПВХ и ПВД;
+												li
+													p Штанцевание;
+												li
+													p Конгревное тиснение;
+												li
+													p Склейка коробок.
+									.col-12
+										a.button.is-outline(href='services.html')
+											| Все услуги
+			.kolbasa-part
+				section.section.dark.is-full-height
+					+bg('', '#C42125')
+					.container
+						.row.align-items-center
+							.col-12.col-lg-7.text-center
+								img(src='static/img/service-3.png', alt='service-3')
+							.col-12.col-lg-5
+								.row
+									.col-12.mb--large
+										span.h2.d-none.d-lg-block Наши услуги
+									.col-12.mb
+										.col-inner(style='max-width: 30.625em')
+											h3 Доставка
+											p
+												| Готовый тираж будет оперативно доставлен заказчику в любую точку России или крупными транспортными компаниями.
+									.col-12
+										a.button.is-outline(href='services.html')
+											| Все услуги
+			.kolbasa-part
+				section.section.is-full-height
+					+bg('', '#06A77D')
+					.container
+						.row.align-items-center
+							.col-12.col-lg-7.text-center
+								img(src='static/img/service-4.png', alt='service-4')
+							.col-12.col-lg-5
+								.row
+									.col-12.mb--large
+										span.h2.d-none.d-lg-block Наши услуги
+									.col-12.mb
+										.col-inner(style='max-width: 30.625em')
+											h3 Разработка упаковки
+											p
+												| После разработки и согласования конструкции упаковки дизайнер предлагает варианты оформления, а затем тестировочные образцы проходят проверку. Такой подход позволяет создать прочную картонную упаковку, которая заинтересует покупателя, выгодно представит продукт на рынке и повысит узнаваемость вашего бренда.
+									.col-12
+										a.button.is-outline(href='services.html')
+											| Все услуги
+	section.section.brand-line.pb-0.pt-0
+		+bg('static/img/svg/logo-word.svg', '#100F0F')
+	section.section.equipment-park.pb-0.pt-0
+		.container-fluid
+			.row.no-gutters.align-items-stretch
+				.col-12.col-lg-7.is-full-height.dark.equipment-park__nums
+					.bg(style='background-color: #06A77D; background-image: linear-gradient(180deg, #06A77D 0%, #62B3CD 100%);')
+					.col-inner.section-pt.section-pb
+						.col-inner(style='max-width: 46.75em')
+							.row.flex-row.md-wrap.justify-content-between.mb-negative.pb
+								.col.flex-col.big-num.mb
+									h4
+										span.big-num__figure 3
+										span
+											| Печатные
+											br
+											| машины
+								.col.flex-col.big-num.mb
+									h4
+										span.big-num__figure 25
+										span
+											| Единиц
+											br
+											| постпечатного
+											br
+											| оборудования
+								.col.flex-col.big-num.mb
+									h4
+										span.big-num__figure 5
+										span
+											| Млн./сутки
+											br
+											| пропускная
+											br
+											| способность
+				.col-12.col-lg-5.is-full-height.pb-0.equipment-park__info
+					+bg('', '#F8F8F8')
+					.col-inner.col--right.col-md--left.section-pt.section-pb
+						.col-inner(style='max-width: 30.625em')
+							.row
+								.col-12.mb--large
+									h2 Парк оборудования
+								.col-12.mb
+									p
+										| Мы используем полиграфическое оборудование от известных производителей и регулярно отслеживаем появление новой печатной техники. Современное допечатное, печатное и послепечатное оборудование обеспечивает высокую производительность и функциональность, которые ценятся нашими клиентами.
+								.col-12
+									a.button.is-outline(href='park.html')
+										| Подробнее
+	section.section.dark
+		+bg('', '#100F0F')
+		.container
+			.row
+				.col-12.mb--large
+					h2 О компании в цифрах
+				.col-12.mb--large
+					.col-inner(style='max-width: 38.75em')
+						p
+							| «CITY press» – один из лидеров печатного рынка Сибири, предлагающий индивидуальный подход к дизайну и изготовлению упаковки для вашего продукта. В типографии полного цикла работает команда профессионалов с большим опытом в печатном деле.
+			.row.flex-row.md-wrap.justify-content-between.mb-negative.pb
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 18
+						span Более восемнадцати лет опыта
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 130
+						span Сотрудников в штате
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 300
+						span Более трехсот партнеров
+				.col.flex-col.big-num.big-num--colored.mb
+					h4
+						span.big-num__figure 6000
+							small м2
+						span Производственных площадей
+	include modules/stages-slider
+	section.map.section.dark
+		+bg('', '#100F0F')
+		.container
+			.row.mb
+				.col-12.mb--large
+					h2 Последние новости
+				.col-12.col-sm-6.col-lg-4.post-item
+					a(href='post.html')
+						.post-item-box
+							.post-item__date
+								p 15.01.2021
+							.post-item__title
+								h4 Типография "СИТИ-ПРЕСС" приобрела KBA RAPIDA 105
+							.post-item__excerpt
+								//- Ограничить кол-во символов 154 и добавить в конец '...'
+								p
+									| «КБА РУС» заключила договор на поставку листовой офсетной печатной машины KBA Rapida 105-5+L SAPC ALV2 в новосибирскую типографию "Сити-Пресс". Информация...
+							span.button.is-outline
+								| Подробнее
+				.col-12.col-sm-6.col-lg-4.post-item
+					a(href='post.html')
+						.post-item-box
+							.post-item__date
+								p 15.01.2021
+							.post-item__title
+								h4 Предприятия региона обеспечивают упаковкой производителей бакалеи и фармацевтики
+							.post-item__excerpt
+								p
+									| «КБА РУС» заключила договор на поставку листовой офсетной печатной машины KBA Rapida 105-5+L SAPC ALV2 в новосибирскую типографию "Сити-Пресс". Информация...
+							span.button.is-outline
+								| Подробнее
+				.col-12.col-sm-6.col-lg-4.post-item
+					a(href='post.html')
+						.post-item-box
+							.post-item__date
+								p 15.01.2021
+							.post-item__title
+								h4 Новосибирская типография «Сити Пресс» расширяет парк оборудования
+							.post-item__excerpt
+								p
+									| Компания «ТЕРРА СИСТЕМЫ» сообщает о заключении контракта на поставку нового автоматического пресса для вырубки первого формата NIKKO JY-106E ...
+							span.button.is-outline
+								| Подробнее
+			.row
+				.col-12.text-center
+					a.button.primary(href='news.html')
+						| Все новости
+	section.form-section.section.pb-0
+		.container-fluid
+			.container
+				.row
+					.col-12.col-md-3.d-none.d-md-block.form-section__img
+						img(src='static/img/support-img.png', alt='support-img')
+					.col-12.col-md-9.offset-md-3
+						.col-inner(style='max-width: 46.875em')
+							h2 Заказать расчет
+							p
+								| Расскажите о своем проекте, наш менеджер свяжется с Вами в ближайшее время.
+		.container-fluid.section-pb.pt--large
+			+bg('', '#EDA915')
+			.container
+				.row
+					.col-12.col-md-9.offset-md-3
+						.col-inner(style='max-width: 46.875em')
+							form.form(action='')
+								.row
+									.col-12.col-sm-6.pb-0
+										input(type='text', name='your-name', value='', required='', placeholder='Введите ваше Имя')
+									.col-12.col-sm-6.pb-0
+										input.contacts-form__phone(type='tel', name='your-phone', value='', required='', placeholder='Введите ваш телефон')
+									.col-12.col-sm-6.pb-0
+										input(type='text', name='your-company', value='', placeholder='Компания')
+									.col-12.col-sm-6.pb-0
+										input(type='email', name='your-mail', value='', placeholder='Введите ваш e-mail')
+									.col-12.pb-0
+										p Загрузить техническое задание
+										label.form__file
+											input(type='file' name='your-file' size='40' accept='.doc,.pdf,.txt,.docx,.jpg,.jpeg,.png' aria-invalid='false' tabindex='0', multiple='')
+											span Прикрепить файл
+									.col-12.pb
+										label.form__agree
+											input(type='checkbox', name='your-agree', required='')
+											span
+												| Я согласен с условиями
+												a(href='privacy-policy.html', target='_blank')  политики конфиденциальности
+									.col-12.pb-0.text-center
+										input.button.primary(type='submit', value='Отправить')
+	section.map.section.dark
+		+bg('', '#100F0F')
+		.container.map__info
+			.row
+				.col-12.mb--large
+					.col-inner(style='max-width: 24.375em')
+						h2 Контакты
+				.col-12
+					.col-inner(style='max-width: 24.375em')
+						h6 Адрес:
+						p
+							| г.Новосибирск,
+							br
+							| ул.Сухарная, д. 35 корпус 11/1, 4 этаж
+				.col-12
+					.col-inner(style='max-width: 24.375em')
+						h6 Контакты:
+						p
+							a(href='tel:+7(383)399-00-03') +7(383)399-00-03
+						p
+							a(href='mailto:office@city-press.ru') office@city-press.ru
+		.map__wrap
+			#map
+
+
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

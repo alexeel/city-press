@@ -1,0 +1,9 @@
+mixin bg(url, bg_color, overlay_color, overlay_opacity)
+	if !url
+		.bg(style=`background-color: ${bg_color};`)
+	else
+		if !overlay_color
+			.bg(style=`background-color: ${bg_color}; background-image: url(${url});`)
+		else
+			.bg(style=`background-color: ${bg_color}; background-image: url(${url});`)
+				.bg-overlay(style=`background-color: ${overlay_color}; opacity: ${overlay_opacity};`)

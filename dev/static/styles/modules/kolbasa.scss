@@ -1,0 +1,11 @@
+.kolbasa{
+	height: 100%;
+	position: relative;
+	display: flex;
+	&-part{
+		display: inline-block;
+		position: relative;
+		width: 93vw;
+		flex: none;
+	}
+}

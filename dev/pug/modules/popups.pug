@@ -1,0 +1,45 @@
+// Popups start
+.popup
+	.popup__content
+		#popup-calc
+			.row
+				.col-12.text-center.mb--half
+					h3
+						| Заявка на расчет
+				.col-12
+					p
+						| Расскажите о своем проекте, наш менеджер свяжется с Вами в ближайшее время.
+				.col-12
+					form.form(action='')
+						.row
+							.col-12.col-sm-6.pb-0
+								input(type='text', name='your-name', value='', required='', placeholder='Введите ваше Имя')
+							.col-12.col-sm-6.pb-0
+								input.contacts-form__phone(type='tel', name='your-phone', value='', required='', placeholder='Введите ваш телефон')
+							.col-12.col-sm-6.pb-0
+								input(type='text', name='your-company', value='', placeholder='Компания')
+							.col-12.col-sm-6.pb-0
+								input(type='email', name='your-mail', value='', placeholder='Введите ваш e-mail')
+							.col-12.pb-0
+								p Загрузить техническое задание
+								label.form__file
+									input(type='file' name='your-file' size='40' accept='.doc,.pdf,.txt,.docx,.jpg,.jpeg,.png' aria-invalid='false' tabindex='0', multiple='')
+									span Прикрепить файл
+							.col-12.pb
+								label.form__agree
+									input(type='checkbox', name='your-agree', required='')
+									span
+										| Я согласен с условиями
+										a(href='privacy-policy.html', target='_blank')  политики конфиденциальности
+							.col-12.pb-0.text-center
+								input.button.primary(type='submit', value='Отправить')
+		#popup-thank
+			h2
+				| Спасибо!
+				br
+				|  скоро Наш специалист с
+				span  вами свяжется
+			button.button.button--primary.popup-close Хорошо
+		button.popup-close
+			i.ti-close
+// Popups end

@@ -1,0 +1,102 @@
+extends template/main
+block variables
+	- var light = 'light';
+
+block header
+	+header()
+
+block main
+	section.section.pb-0
+		.container
+			.row
+				.col-12.mb--large
+					h1 Услуги
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3 Допечатная подготовка
+						ul
+							li
+								p Подготовка макета к печати в соответствии с требованиями типографии;
+							li
+								p Цветокоррекция изображения;
+							li
+								p
+									| Разработка и проектирование оснастки для отделок фольгой, конгревного тиснения и лакирования;
+							li
+								p Проектирование кроев коробок.
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__img
+					.col-inner
+						.image-bordered
+							.image-cover
+								img(src='static/img/service-img-1.jpg', alt='service-img-1')
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.image-bordered(style='color: #EDA915;')
+							.image-cover
+								img(src='static/img/service-img-2.jpg', alt='service-img-2')
+				.col-12.col-md-6.col-lg-5.row-divided__info
+					.col-inner
+						h3 Печать
+						ul
+							li
+								p Многокрасочная печать с различными видами покрытий;
+							li
+								p Лакирование водными и УФ-лаками;
+							li
+								p Твин-лакирование;
+							li
+								p Лакирование пигментными лаками.
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3 Постпечать
+						ul
+							li
+								p Тиснение фольгой;
+							li
+								p УФ-лакирование;
+							li
+								p Ламинирование;
+							li
+								p Вклейка окошек ПВХ и ПВД;
+							li
+								p Штанцевание;
+							li
+								p Конгревное тиснение;
+							li
+								p Склейка коробок.
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__img
+					.col-inner
+						.image-bordered(style='color: #2D2DFE;')
+							.image-cover
+								img(src='static/img/service-img-3.jpg', alt='service-img-3')
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__img
+					.col-inner
+						.image-bordered(style='color: #C42125;')
+							.image-cover
+								img(src='static/img/service-img-4.jpg', alt='service-img-4')
+				.col-12.col-md-6.col-lg-5.row-divided__info
+					.col-inner
+						h3 Доставка
+						p
+							| Готовый тираж будет оперативно доставлен заказчику в любую точку России или  крупными транспортными компаниями.
+			.row.row-divided.align-items-center
+				.col-12.col-md-6.offset-lg-1.row-divided__info
+					.col-inner
+						h3 Разработка упаковки
+						p
+							| После разработки и согласования конструкции упаковки дизайнер предлагает варианты оформления, а затем тестировочные образцы проходят проверку. Такой подход позволяет создать прочную картонную упаковку, которая заинтересует покупателя, выгодно представит продукт на рынке и повысит узнаваемость вашего бренда.
+				.col-12.col-md-6.col-lg-5.order-first.order-md-last.row-divided__img
+					.col-inner
+						.image-bordered(style='color: #06A77D;')
+							.image-cover
+								img(src='static/img/service-img-5.jpg', alt='service-img-5')
+	include modules/stages-slider
+
+block footer
+	include modules/footer
+	include modules/popups
+	include modules/menu

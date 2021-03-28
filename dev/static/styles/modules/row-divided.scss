@@ -1,0 +1,19 @@
+.row-divided{
+	padding-top: 6.25em;
+	padding-bottom: 4.375em;
+	border-top: 1px solid;
+	&:last-child{
+		border-bottom: 1px solid;
+	}
+	&__img,
+	&__info{
+		&>.col-inner{
+			max-width: 30.625em;
+		}
+	}
+	&__img{
+		.image-cover{
+			padding-top: 96%;
+		}
+	}
+}

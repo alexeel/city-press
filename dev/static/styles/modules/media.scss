@@ -1,0 +1,542 @@
+@media screen and (min-width: 1921px){
+	:root{
+		font-size: $base-font-size;
+	}
+	body{
+		font-size: calc(1rem + 22.4*(100vw - 120rem)/4479)!important;
+	}
+}
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1680px) {
+
+}
+
+@media screen and (max-width: 1540px) {
+	h1,
+	.h1{
+		font-size: 70px;
+	}
+	h2,
+	.h2{
+		font-size: 40px;
+	}
+	h3,
+	.h3{
+		font-size: 26px;
+	}
+	.outline-text{
+		font-size: 50px;
+	}
+	.big-num__figure{
+		font-size: 5em;
+	}
+	.popup__content{
+		margin-top: 40px;
+		max-width: 980px;
+		&>div:not([class]){
+			padding: 80px 100px 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	h1,
+	.h1{
+		font-size: 55px;
+	}
+	h2,
+	.h2{
+		font-size: 35px;
+	}
+	h3,
+	.h3{
+		font-size: 24px;
+	}
+	.section{
+		padding-top: 120px;
+		padding-bottom: 90px;
+		&-pt{
+			padding-top: 120px;
+		}
+		&-pb{
+			padding-bottom: 90px;
+		}
+	}
+	.header{
+		padding: 20px 0;
+	}
+	.brand-line{
+		margin-top: 60px;
+		margin-bottom: 60px;
+		height: 80px;
+		.bg{
+			background-size: auto 60%;
+		}
+	}
+	.outline-text{
+		font-size: 42px;
+	}
+	.form-section{
+		.container-fluid{
+			&:first-child{
+				padding-top: 30px;
+			}
+		}
+	}
+	.nav-menu__item{
+		font-size: 1em;
+	}
+	.menu{
+		padding-left: 60px;
+		padding-right: 60px;
+		max-width: 345px;
+		&__item{
+			margin-bottom: 3em;
+		}
+		&-btn--close{
+			top: 20px;
+			right: 40px;
+		}
+	}
+	.button{
+		font-size: 1em;
+	}
+	input[type='email'], input[type='date'],
+	input[type='search'], input[type='number'],
+	input[type='text'], input[type='tel'],
+	input[type='url'], input[type='password'],
+	textarea, select{
+		height: 3.2em;
+	}
+	.form__file{
+		height: 3.2em;
+	}
+	.post-item{
+		&-box{
+			padding: 30px;
+			padding-left: 0;
+		}
+		&__img{
+			margin-bottom: 20px;
+		}
+		&__excerpt{
+			margin-bottom: 40px;
+		}
+	}
+	.row-divided{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+	.team{
+		.bg{
+			height: 44em;
+		}
+		&-list{
+			margin-bottom: -30px;
+		}
+		&-card{
+			margin-bottom: 30px;
+		}
+	}
+	.stages-line{
+		&__item{
+			max-width: 3.4em;
+			max-height: 3.4em;
+		}
+		&__number{
+			font-size: 1em;
+		}
+		&__title{
+			padding-left: 2.8em;
+		}
+		&__content{
+			padding-top: .3em;
+		}
+	}
+	.popup__content{
+		max-width: 940px;
+		&>div:not([class]){
+			padding: 60px 80px 30px;
+		}
+		&>.popup-close{
+			top: 30px;
+			right: 45px;
+		}
+	}
+	.footer{
+		padding: 60px 0 30px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.container{
+		max-width: 90%;
+	}
+	.menu-btn{
+		font-size: 14px;
+		&--close{
+			font-size: 14px;
+		}
+	}
+	.equipment-park{
+		&__nums{
+			&>.col-inner{
+				padding-left: calc(10vw - 7vw);
+			}
+		}
+		&__info{
+			&>.col-inner{
+				padding-right: calc(10vw - 7vw);
+			}
+		}
+	}
+	.big-num__figure{
+		font-size: 4em;
+	}
+	.stages{
+		&-card__info{
+			padding: 40px;
+		}
+		&-slider__item{
+			max-width: 55em;
+		}
+	}
+	.stages-line__item{
+		&:hover{
+			width: 32em;
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1170px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+	body{
+		margin-right: 4vw;
+		&[data-scroll-lock-locked]{
+			margin-right: 4vw;
+		}
+		&::before{
+			width: 4vw;
+			background-size: 80%;
+		}
+	}
+	h1,
+	.h1{
+		font-size: 42px;
+	}
+	h2,
+	.h2{
+		font-size: 30px;
+	}
+	h3,
+	.h3{
+		font-size: 22px;
+	}
+	.container{
+		max-width: 95%;
+	}
+	.section{
+		padding-top: 90px;
+		padding-bottom: 60px;
+		&-pt{
+			padding-top: 90px;
+		}
+		&-pb{
+			padding-bottom: 60px;
+		}
+	}
+	.col-md--left{
+		&>.col-inner{
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+	.md-wrap{
+		flex-wrap: wrap;
+	}
+	.header{
+		&.transparent{
+			&+main{
+				&>.section:first-child{
+					padding-top: 150px;
+				}
+			}
+		}
+	}
+	.menu{
+		&-wrap{
+			width: 96vw;
+		}
+		&-btn--close{
+			right: 30px;
+		}
+	}
+	.slick-arrow {
+		padding: .5em .6em;
+	}
+	.outline-text{
+		font-size: 35px;
+	}
+	.kolbasa{
+		display: block;
+		&-part{
+			width: 100%;
+		}
+	}
+	.equipment-park{
+		&__nums{
+			&>.col-inner{
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				margin-left: 15px;
+				margin-right: 15px;
+				&>.col-inner{
+					max-width: 100% !important;
+				}
+			}
+		}
+		&__info{
+			&>.col-inner{
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+	}
+	.big-num{
+		width: 100%;
+		flex-basis: 50%;
+		max-width: 50%;
+		&__figure{
+			font-size: 3em;
+		}
+	}
+	.post-item__excerpt{
+		margin-bottom: 20px;
+	}
+	.stages{
+		&-card__info{
+			padding: 30px;
+		}
+		&-slider__item{
+			max-width: 50em;
+		}
+	}
+	.stages-line{
+		&__wrap{
+			margin-top: 0;
+		}
+		&__list{
+			padding-left: 2.5%;
+			padding-right: 2.5%;
+		}
+		&__number{
+			left: 0;
+			bottom: 100%;
+			transform: translateY(100%) scale(1.4);
+			&::before{
+				transform: rotate(0deg);
+			}
+		}
+		&__title{
+			padding-left: 2.5em;
+		}
+		&__content{
+			clip-path: none;
+		}
+		&__item{
+			position: relative;
+			max-width: initial;
+			max-height: initial;
+			left: 0 !important;
+			right: auto !important;
+			bottom: auto !important;
+			&--left{
+				.stages-line__number{
+					right: 100%;
+					transform: translate(100%, 100%) scale(1.4);
+				}
+			}
+			&:hover{
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	.map{
+		&__info{
+			pointer-events: all;
+		}
+		&__wrap{
+			position: static;
+			margin-bottom: -60px;
+			&::before{
+				display: none;
+			}
+		}
+	}
+	.geography-list__item{
+		pointer-events: none;
+	}
+	.footer{
+		&-copy{
+			&>.col-inner{
+				padding-bottom: 0;
+			}
+		}
+		&-author{
+			position: static;
+		}
+	}
+}
+
+@media screen and (max-width: 849px) {
+	h1,
+	.h1{
+		font-size: 38px;
+	}
+	h2,
+	.h2{
+		font-size: 28px;
+	}
+	.brand-line{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		height: 60px;
+	}
+	.outline-text{
+		font-size: 30px;
+	}
+	.stages{
+		&-card{
+			&__info{
+				padding: 25px;
+			}
+			&__img{
+				display: none;
+			}
+		}
+		&-slider__item{
+			max-width: 90vw;
+		}
+	}
+	.geography{
+		&-map{
+			margin-bottom: 1em;
+		}
+		&-list--alt{
+			display: block;
+		}
+	}
+	.post-slider{
+		.slick{
+			&-track{
+				padding-top: 61%;
+			}
+			&-slide{
+				transition: .6s;
+				&.slick-active{
+					width: 100% !important;
+					&~.slick-slide{
+						top: 0;
+						left: 100%;
+						height: 100%;
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	.popup__content{
+		&>div:not([class]){
+			padding: 30px 40px 0px;
+		}
+		&>.popup-close{
+			top: 15px;
+			right: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 549px) {
+	h1,
+	.h1{
+		font-size: 32px;
+	}
+	h2,
+	.h2{
+		font-size: 26px;
+	}
+	.section{
+		padding-top: 60px;
+		padding-bottom: 30px;
+		&-pt{
+			padding-top: 60px;
+		}
+		&-pb{
+			padding-bottom: 30px;
+		}
+	}
+	.button{
+		width: 100%;
+		min-width: auto;
+	}
+	.outline-text{
+		font-size: 28px;
+		word-break: break-word;
+	}
+	.big-num{
+		flex-basis: 100%;
+		max-width: 100%;
+		&__figure{
+			font-size: 2.5em;
+		}
+	}
+	.lightbox-wrap{
+		&.is-link{
+			width: 100%;
+		}
+	}
+	.stages-card__title{
+		&::before{
+			font-size: 2em;
+		}
+	}
+	.stages-slider__item{
+		max-width: 95vw;
+	}
+	.map__wrap{
+		margin-bottom: -30px;
+	}
+	.team{
+		.bg{
+			height: 57em;
+		}
+		&-card__info{
+			padding: 20px;
+		}
+	}
+	.footer{
+		&-submenu{
+			flex-wrap: wrap;
+			&__item{
+				margin-bottom: 1em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.big-num__figure{
+		font-size: 2em;
+	}
+}

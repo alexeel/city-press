@@ -1,0 +1,38 @@
+.big-num{
+	text-align: center;
+	&__figure{
+		display: block;
+		font-size: 7em;
+		small{
+			font-size: .2em;
+		}
+	}
+	&--colored{
+		background-size: 100% 200%;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: .7s;
+		&:nth-child(4n+1){
+			background-image: linear-gradient(180deg, currentColor 0%, currentColor 50%, #F42E78 50.1%, #C17AFC 100%);
+		}
+		&:nth-child(4n-2){
+			background-image: linear-gradient(180deg, currentColor 0%, currentColor 50%, #2D2DFE 50.1%, #4F4FAE 100%);
+		}
+		&:nth-child(4n-1){
+			background-image: linear-gradient(180deg, currentColor 0%, currentColor 50%, #85FFBD 50.1%, #FFFB7D 100%);
+		}
+		&:nth-child(4n+4){
+			background-image: linear-gradient(180deg, currentColor 0%, currentColor 50%, #A04FBD 50.1%, #4FB1BD 100%);
+		}
+		&:hover{
+			background-position: 0 100%;
+		}
+	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.big-num{
+		&--colored{
+			background: none !important;
+		}
+	}
+}
